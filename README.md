@@ -11,6 +11,36 @@ Welcome to our quantitative researcher assignment! This exercise is designed to 
 - **Evaluation Criteria**: We're primarily interested in your thought process, reasoning, and ability to explain your work clearly. There are no strictly "right" or "wrong" answers as long as your approach is sound and well-justified.
 - **Follow-up**: After submission, you'll have a 1-hour discussion with our head of quant to walk through your solutions and reasoning.
 
+## Git LFS Instructions
+
+This repository uses Git Large File Storage (Git LFS) to handle large data files. To properly clone and work with this repository, follow these steps:
+
+1. **Install Git LFS**:
+   - For Ubuntu/Debian: `sudo apt-get install git-lfs`
+   - For macOS with Homebrew: `brew install git-lfs`
+   - For Windows: Download from https://git-lfs.github.com/
+
+2. **Set up Git LFS**:
+   ```bash
+   git lfs install
+   ```
+
+3. **Clone the repository**:
+   ```bash
+   git clone https://github.com/axiomixgroup/quant_assignment.git
+   cd quant_assignment
+   ```
+
+4. **Pull LFS files** (if they weren't downloaded during clone):
+   ```bash
+   git lfs pull
+   ```
+
+If you encounter any issues with the large data files, you can verify their status with:
+```bash
+git lfs ls-files
+```
+
 ## Disclaimer
 
 **Important**: The code in this assignment is not intended to be an example of how things are done in production environments. This is deliberately designed as a toy exercise to evaluate your skill set, problem-solving approach, and ability to reason about quantitative problems. Production trading systems would require significantly more robustness, optimization, and risk controls than what is expected in this assignment.
