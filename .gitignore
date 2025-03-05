@@ -59,3 +59,4 @@ coverage.xml
 plots/
 *.log
 .DS_Store
+data/parsed_ondo/*.parquet
